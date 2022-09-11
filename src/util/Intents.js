@@ -59,6 +59,7 @@ Intents.FLAGS = {
   DIRECT_MESSAGES: 1 << 12,
   DIRECT_MESSAGE_REACTIONS: 1 << 13,
   DIRECT_MESSAGE_TYPING: 1 << 14,
+  MESSAGE_CONTENT: 1 << 15,
 };
 
 /**
@@ -66,7 +67,7 @@ Intents.FLAGS = {
  * @type {number}
  * @see {@link https://discord.com/developers/docs/topics/gateway#privileged-intents}
  */
-Intents.PRIVILEGED = Intents.FLAGS.GUILD_MEMBERS | Intents.FLAGS.GUILD_PRESENCES;
+Intents.PRIVILEGED = Intents.FLAGS.GUILD_MEMBERS | Intents.FLAGS.GUILD_PRESENCES | Intents.MESSAGE_CONTENT;
 
 /**
  * Bitfield representing all intents combined
